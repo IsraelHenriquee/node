@@ -6,6 +6,7 @@ const { PORT } = require('./src/config/config');
 const userRoutes = require('./src/routes/userRoutes');
 const productRoutes = require('./src/routes/productRoutes');
 const authRoutes = require('./src/routes/authRoutes');
+const randomRoutes = require('./src/routes/randomRoutes');
 
 // Importar middlewares customizados
 const logger = require('./src/middleware/logger');
@@ -33,6 +34,7 @@ app.get('/', (req, res) => {
 app.use('/api/users', userRoutes);
 app.use('/api/products', productRoutes);
 app.use('/api/auth', authRoutes);
+app.use('/api/random', randomRoutes);
 
 // Middleware para rotas não encontradas
 app.use('*', (req, res) => {
