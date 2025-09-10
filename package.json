@@ -1,0 +1,23 @@
+{
+  "name": "node-api-server",
+  "version": "1.0.0",
+  "description": "Um servidor Node.js simples com API endpoints",
+  "main": "server-organized.js",
+  "scripts": {
+    "start": "node server-organized.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": ["node", "express", "api", "server"],
+  "author": "Israel Henrique",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
